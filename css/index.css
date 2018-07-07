@@ -1,50 +1,100 @@
-* {
+        * {
             margin: 0;
             padding: 0;
         }
-
+        body{
+            background-color: #f0f3ef;
+        }
         .ad {
-            background-color: red;
+
             vertical-align: middle;
             text-align: center;
             height: 80px;
         }
-
         nav {
             min-width: 1190px;
             height: 30px;
-            background-color: red;
+            background-color: #e3e4e5;
+        }
+
+        nav a {
+            color: #999999;
+            text-decoration: none;
+            float: right;
+            margin-right: 15px;
+            line-height:30px;
+            font-size: 13px;
+        }
+        nav a:last-child{
+            float: left;
+            margin-left: 220px;
+        }
+        nav span.nav_space{
+            background-color: #999999;
+            width: 2px;
+            height: 15px;
+            float:right;
+            position: relative;
+            top: 8px;
+            left: -5px;  
         }
 
         .top_nav {
-            background-color: navajowhite;
             width: 1190px;
             height: 30px;
             margin: 0px auto;
         }
 
         .middle {
-            background-color: beige;
+            
             width: 1190px;
             height: 500px;
             margin: 0px auto;
+            position: relative;
+            top: -30px;
         }
 
         .left_aside {
             width: 190px;
-            height: 470px;
-            background-color: aquamarine;
+            height: 670px;
+            background-color: white;
             float: left;
+        }
+        .left_aside_hrspace{
+            background-color: beige;
+            height: 1px;
+            width: 170px;
+            
         }
 
         .spirte {
             width: 190px;
             height: 170px;
-            background-color: red;
+            background-image: url(../image/sprite.head.png);
+        }
+        .slide_nav ul,span{
+            float: left;
+            color: #999999;
+        }
+        .slide_nav ul:nth-of-type(1){
+            margin-top: 7px;
+        }
+        .slide_nav ul:nth-of-type(2){
+            clear: both;
+        }
+        .slide_nav li{
+            list-style: none;
+            float: left;
+            margin: 4px 5px;
+            font-size: 15px;
+        }
+        .slide_nav a{
+            color: #999999;
+            text-decoration: none;
         }
 
         main {
-            background-color: azure;
+      
             width: 800px;
             height: 470px;
             float: left;
@@ -75,82 +125,215 @@
         .right_aside {
             width: 190px;
             height: 470px;
-            background-color: black;
+            background-color: white;
             float: left;
             margin-left: 10px;
             position: relative;
             top: 170px;
         }
-
-        .headPic {
-            background-color: red;
+        
+        .head {
+            background-color: white;
+            
             width: 190px;
             height: 150px;
         }
-
+        .headPic{
+            background-image: url(../image/no_login.jpg);
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            border-radius: 50%;
+            border: 5px solid #e3e1df;
+            background-position: 5px;
+            position: relative;
+            left: 70px;
+            top: -5px;
+            -webkit-box-shadow: 3px 4px 20px #9999;
+            box-shadow: 3px 4px 20px #9999;
+        }
+        .head span{
+            font-size:12px;
+            -webkit-transform: translate(50%,50%);
+            transform: translate(50%,50%);
+            
+        }
+        .head a{
+            font-size:13px;
+            text-decoration: none;
+            color: #999999;
+            position: relative;
+            left: 35%;
+            top: 5px;
+            
+        }
         .board {
             width: 190px;
             height: 130px;
+            overflow: hidden;
         }
-
+        .board a{
+            float: left;
+            text-decoration: none;
+            color: black;
+            margin:0 10px;
+        }
+        .board a:last-of-type{
+            float: right;
+       
+            color: black;
+        }
+        .board span.space{
+            background-color: #999999;
+            width: 1px;
+            height: 17px;
+            position: relative;
+            top: 4px;
+        }
+        
         .board li {
             list-style: none;
         }
-
+        .board ul{
+            clear: both;
+            position: relative;
+            top:10px;
+              left: 25px;
+        }
+        .board ul:first-of-type {
+            display: none;
+        }
+        .right_aside span.space_hr{
+            background-color: #ebeaea;
+            width: 160px;
+            height: 2px;
+            margin-left: 15px;
+        }
         .picNav {
             width: 190px;
             height: 190px;
-            background-color: blanchedalmond;
+            background-color: white;
         }
 
         .picNav li {
             list-style: none;
+            float: left;
+            margin: 10px 10px 13px 10px;
+            color: #9999;
+            position: relative;
+            left: 10px;
+        }
+        .picNav a {
+            text-decoration: none;
+            color: #9999;
+            position: relative;
+            left: -17px;
+            top: 17px;
+            font-size: 12px;
         }
 
         .top_search {
             width: 1000px;
             height: 170px;
-            background-color: brown;
+           
             float: left;
+            position: relative;
+            top:60px;
+            left: 120px;
         }
 
         .search {
             width: 600px;
             height: 70px;
-            background-color: blueviolet;
+        
             float: left;
         }
 
         .search input {
-            width: 500px;
+            width: 450px;
             height: 40px;
             border: none;
+            float: left;
         }
-        .under_search_nav{
-             width: 500px;
-            height: 30px;
-            background-color:green;
-          
+        .search_icon {
+            width: 40px;
+            height: 40px;
+            border: none;
+            float: left;
+            background-color: red;
+            background-image: url(../image/search_icon.png);
+            background-size: contain;
+          position: relative;
+            left: -40px; 
+        }
+        .camera_icon {
+            width: 40px;
+            height: 40px;
+            border: none;
+           
+            float: left;
+            background-image: url(../image/sprite-photo-search.png);
+            background-size: 470%;
+            background-position:4px 6px;
+            position: relative;
+            left: -45px;
+            
+        }
+
+        .under_search_nav a{
+            text-decoration: none;
+            color: #9999;
+            font-size: 13px;
+            
+
         }
 
         .shop_cart {
             width: 240px;
             height: 40px;
             float: left;
-            background-color: blue;
+            background-color: white;
+            position: relative;
+            left: -75px;
         }
-        .erwei{
-            float: right;
+
+        .erwei {
+            float:left;
             width: 80px;
             height: 80px;
-            background-color: black;
+            border: 1px solid #9999;
+            position: relative;
+            left: -40px;
+            top: -30px;
         }
-        .erweiPic{
-            
+
+        .erweiPic {
+            background-image: url(../image/mobile_qrcode.png);
+            width: 78px;
+            height: 78px;
+            background-size: cover;
         }
-        .center_nav{
+
+        .center_nav {
             width: 700px;
             height: 30px;
-            background-color: grey;
+            
             float: left;
+            position: relative;
+            top:10px;
+            left:-100px;
+            
+        }
+        .center_nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .lunbo,.lunbo_right{
+            position: relative;
+            top: 30px;
+        }
+        .right_aside{
+            position: relative;
+            top: 200px;
         }
