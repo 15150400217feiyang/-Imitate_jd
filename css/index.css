@@ -1,15 +1,24 @@
+
+html{width:100%;overflow-x:hidden;} 
         * {
             margin: 0;
             padding: 0;
         }
+        
         body{
             background-color: #f0f3ef;
+         
+       
         }
-        .ad {
-
-            vertical-align: middle;
+        body a:hover{
+            color: red;
+        }
+  
+        .adPic{
+            background-color: #99ccff;
+            min-width: 1190px;
             text-align: center;
-            height: 80px;
+        
         }
         nav {
             min-width: 1190px;
@@ -40,18 +49,23 @@
         }
 
         .top_nav {
+     
             width: 1190px;
             height: 30px;
-            margin: 0px auto;
+          margin: 0 auto;
+            z-index: 
+            
         }
-
+        .top_nav span{
+            color: red;
+        }
         .middle {
             
             width: 1190px;
             height: 500px;
             margin: 0px auto;
-            position: relative;
-            top: -30px;
+
+        
         }
 
         .left_aside {
@@ -59,11 +73,13 @@
             height: 670px;
             background-color: white;
             float: left;
+            position: relative;
+            top: -30px
         }
         .left_aside_hrspace{
             background-color: beige;
             height: 1px;
-            width: 170px;
+            width: 190px;
             
         }
 
@@ -134,9 +150,8 @@
         
         .head {
             background-color: white;
-            
             width: 190px;
-            height: 150px;
+            height: 170px;
         }
         .headPic{
             background-image: url(../image/no_login.jpg);
@@ -147,10 +162,32 @@
             border: 5px solid #e3e1df;
             background-position: 5px;
             position: relative;
-            left: 70px;
+            left: 60px;
             top: -5px;
             -webkit-box-shadow: 3px 4px 20px #9999;
             box-shadow: 3px 4px 20px #9999;
+        }
+        .head input{
+            float: left;
+            border-radius: 25px;
+            padding: 3px 7px;
+            border: none;
+            -webkit-box-shadow: 3px 8px 20px #e5e3e3;
+            box-shadow: 3px 8px 20px #e5e3e3;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            margin: 0 5px;
+        }
+        .head input:nth-of-type(1){
+            background-color: white;
+            color: red;
+            
+        }
+        .head input:nth-of-type(2){
+            background-color: black;
+            color: #d0c385;
+            
         }
         .head span{
             font-size:12px;
@@ -177,11 +214,14 @@
             text-decoration: none;
             color: black;
             margin:0 10px;
+          
+        }
+        .board a:hover{
+            color: black;
         }
         .board a:last-of-type{
             float: right;
-       
-            color: black;
+   
         }
         .board span.space{
             background-color: #999999;
@@ -198,7 +238,7 @@
             clear: both;
             position: relative;
             top:10px;
-              left: 25px;
+            left: 25px;
         }
         .board ul:first-of-type {
             display: none;
@@ -211,17 +251,21 @@
         }
         .picNav {
             width: 190px;
-            height: 190px;
+            height: 170px;
             background-color: white;
         }
 
         .picNav li {
             list-style: none;
             float: left;
-            margin: 10px 10px 13px 10px;
+            margin: 15px 0;
             color: #9999;
             position: relative;
-            left: 10px;
+            left: 15px;
+             }
+        .picNav li:last-of-type{
+            position: relative;
+            left: 20px;
         }
         .picNav a {
             text-decoration: none;
@@ -230,6 +274,9 @@
             left: -17px;
             top: 17px;
             font-size: 12px;
+  
+            
+            
         }
 
         .top_search {
@@ -238,7 +285,7 @@
            
             float: left;
             position: relative;
-            top:60px;
+            top:30px;
             left: 120px;
         }
 
@@ -262,7 +309,8 @@
             float: left;
             background-color: red;
             background-image: url(../image/search_icon.png);
-            background-size: contain;
+            background-size: 80%;
+            background-position: 5px 4px;
           position: relative;
             left: -40px; 
         }
@@ -295,23 +343,63 @@
             background-color: white;
             position: relative;
             left: -75px;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        .shop_cart_icon{
+            background-image: url(../image/toolbars.png);
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 10px;
+            left: 60px;
+            float: left;
+            
+        }
+        .shop_cart span{
+            color: red;
+             position: relative;
+            left: 60px;
+            top: 10px;
+            margin: 0 5px;
+            font-size: 13px;
+           
+        }
+        .shop_count{
+            width: 13px;
+            height: 13px;
+            border-radius:40px;
+            background-color: red;
+            float: left;
+            position: relative;
+            top: 5px;
+            left: 55px;
+             font-size: 13px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 14px;
+            color: white;
         }
 
         .erwei {
-            float:left;
-            width: 80px;
-            height: 80px;
+            float:right;
+            width: 67px;
+            height: 67px;
             border: 1px solid #9999;
             position: relative;
-            left: -40px;
+            left: -120px;
             top: -30px;
         }
 
         .erweiPic {
             background-image: url(../image/mobile_qrcode.png);
-            width: 78px;
-            height: 78px;
+            width: 65px;
+            height: 65px;
             background-size: cover;
+            position: relative;
+            left: 1px;
+            top: 1px;
         }
 
         .center_nav {
@@ -329,11 +417,8 @@
             color: black;
             font-size: 16px;
         }
-        .lunbo,.lunbo_right{
-            position: relative;
-            top: 30px;
-        }
+
         .right_aside{
             position: relative;
-            top: 200px;
+            top: 170px;
         }
