@@ -1,71 +1,165 @@
+         html{width:100%;overflow-x:hidden;}  
 
-html{width:100%;overflow-x:hidden;} 
         * {
             margin: 0;
             padding: 0;
         }
-        
-        body{
+
+        body {
             background-color: #f0f3ef;
-         
-       
+
+
         }
-        body a:hover{
+
+        body a:hover {
             color: red;
         }
-  
-        .adPic{
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .adPic {
             background-color: #99ccff;
             min-width: 1190px;
             text-align: center;
-        
+
         }
+
         nav {
             min-width: 1190px;
             height: 30px;
             background-color: #e3e4e5;
+
         }
 
         nav a {
             color: #999999;
             text-decoration: none;
             float: right;
-            margin-right: 15px;
-            line-height:30px;
+            margin-right: 13px;
+            line-height: 30px;
             font-size: 13px;
+            width: 70px;
+            text-align: center;
         }
-        nav a:last-child{
+
+        nav a:last-of-type {
             float: left;
             margin-left: 220px;
         }
-        nav span.nav_space{
+
+        nav a.pull-down:hover {
+            background-color: white;
+        }
+
+        nav .beijing,
+        .myjd,
+        .comshop {
+            position: relative;
+            left: 220px;
+            top: 30px;
+            width: 200px;
+            height: 200px;
+            ;
+            background-color: white;
+            display: none;
+            z-index: 2;
+        }
+
+        nav .beijing ul>li,
+        .myjd ul>li,
+        .comshop ul>li {
+            list-style: none;
+            margin: 10px 0px 5px 10px;
+            display: inline-block;
+            width: 50px;
+            /*  background-color: red; */
+            text-align: center;
+            position: relative;
+            top: -25px;
+
+        }
+
+        nav .beijing li:hover {
+
+            background-color: red;
+        }
+
+        nav .myjd {
+            position: relative;
+            left: 682px;
+        }
+
+        nav .myjd ul>li {
+
+            margin: 10px 0px 5px 10px;
+
+            width: 80px;
+            /*  background-color: red; */
+        }
+
+        nav .myjd li:hover {
+
+            background-color: red;
+
+        }
+
+        nav .comshop {
+            position: relative;
+            left: 852px;
+            /*    display: block; */
+            height: 100px;
+        }
+
+        nav .comshop ul>li {
+
+            margin: 10px 0px 5px 10px;
+
+            width: 80px;
+            /*  background-color: red; */
+        }
+
+        nav .comshop li:hover {
+
+            background-color: red;
+
+        }
+
+        nav span.nav_space {
             background-color: #999999;
             width: 2px;
             height: 15px;
-            float:right;
+            float: right;
             position: relative;
             top: 8px;
-            left: -5px;  
+            left: -5px;
         }
 
         .top_nav {
-     
+
             width: 1190px;
             height: 30px;
-          margin: 0 auto;
-            z-index: 
-            
+            margin: 0 auto;
+
+
         }
-        .top_nav span{
+
+        .top_nav span {
             color: red;
         }
+
         .middle {
-            
+
             width: 1190px;
             height: 500px;
             margin: 0px auto;
 
-        
+
         }
 
         .left_aside {
@@ -76,11 +170,21 @@ html{width:100%;overflow-x:hidden;}
             position: relative;
             top: -30px
         }
-        .left_aside_hrspace{
+
+        .left_aside ul {
+            width: 190px;
+
+        }
+
+        .left_aside_hrspace {
             background-color: beige;
             height: 1px;
             width: 190px;
-            
+
+        }
+
+        .left_aside .slide_nav ul:hover {
+            background-color: #cccc;
         }
 
         .spirte {
@@ -88,29 +192,142 @@ html{width:100%;overflow-x:hidden;}
             height: 170px;
             background-image: url(../image/sprite.head.png);
         }
-        .slide_nav ul,span{
+
+        .slide_nav ul,
+        span {
             float: left;
             color: #999999;
         }
-        .slide_nav ul:nth-of-type(1){
+
+        .slide_nav ul:nth-of-type(1) {
             margin-top: 7px;
         }
-        .slide_nav ul:nth-of-type(2){
+
+        .slide_nav ul:nth-of-type(2) {
             clear: both;
         }
-        .slide_nav li{
+
+        .slide_nav li {
             list-style: none;
             float: left;
             margin: 4px 5px;
             font-size: 15px;
         }
-        .slide_nav a{
+
+        .slide_nav a {
             color: #999999;
             text-decoration: none;
         }
 
+        .slide_nav_show {
+            width: 1000px;
+            height: 500px;
+            position: relative;
+            top: -484px;
+            left: 190px;
+            z-index: 2;
+            float: left;
+            display: none;
+            /*        background-color: red; */
+        }
+
+        .elec {
+            width: 1000px;
+            height: 500px;
+            -webkit-box-shadow: -1px 2px 5px #ccc, -2px -2px 5px #ccc, 2px -2px 5px #ccc, 2px 2px 5px #ccc;
+            box-shadow: -1px 2px 5px #ccc, -2px -2px 5px #ccc, 2px -2px 5px #ccc, 2px 2px 5px #ccc;
+            display: none;
+
+        }
+
+        .headNav,
+        .headNav ul {
+            width: 800px;
+            height: 60px;
+            background-color: white;
+            float: left;
+
+        }
+
+        .headNav ul>li {
+            float: left;
+            width: 100px;
+            height: 30px;
+            margin: 15px 10px;
+            background-color: black;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 30px;
+            color: white;
+
+        }
+
+        .headNav ul>li:first-of-type {
+
+            width: 100px;
+            margin-left: 40px;
+        }
+
+        .headNav ul>li a {
+            color: white;
+        }
+
+
+        .centerNav {
+            width: 800px;
+            height: 440px;
+            background-color: white;
+            float: left;
+
+        }
+
+        .centerNav a {
+            color: black;
+        }
+
+        .centerNav a:hover {
+            color: red;
+        }
+
+        .centerNav ul {
+            width: 800px;
+            height: 40px;
+            background-color: white;
+            float: left;
+            margin-top: 0px;
+        }
+
+        .centerNav ul>li {
+            float: left;
+            margin: 15px;
+
+        }
+
+        .centerNav ul>li:first-of-type {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .rightPic {
+            width: 200px;
+            height: 500px;
+            background-color: white;
+            float: right;
+            text-align: center;
+
+
+        }
+
+        .rightPic img {
+
+            position: relative;
+            top: 30px;
+
+        }
+
+
         main {
-      
+
             width: 800px;
             height: 470px;
             float: left;
@@ -118,11 +335,49 @@ html{width:100%;overflow-x:hidden;}
 
         .lunbo {
             width: 590px;
-            height: 470px;
+            height: 510px;
             overflow: hidden;
             float: left;
+            position: relative;
+            top: -40px;
             margin-left: 10px;
         }
+
+        .lunbo_circle {
+            float: left;
+            position: relative;
+            top: 430px;
+            left: 50px;
+            word-spacing: 7px;
+            font-size: 12px;
+            color: white;
+        }
+
+        .lunbo_np {
+            float: left;
+            position: relative;
+            top: 50%;
+            ;
+            color: white;
+
+        }
+
+        .lunbo_np .pre {
+            position: relative;
+            left: -20px;
+            color: white;
+            font-size: 40px;
+
+        }
+
+        .lunbo_np .next {
+            position: relative;
+            left: 450px;
+            color: white;
+            font-size: 40px;
+
+        }
+
 
         .lunbo_right {
             width: 190px;
@@ -138,6 +393,12 @@ html{width:100%;overflow-x:hidden;}
             margin-bottom: 6px;
         }
 
+        .lunbo_right img:hover {
+            opacity: 0.8;
+        }
+
+
+
         .right_aside {
             width: 190px;
             height: 470px;
@@ -146,14 +407,16 @@ html{width:100%;overflow-x:hidden;}
             margin-left: 10px;
             position: relative;
             top: 170px;
+
         }
-        
+
         .head {
             background-color: white;
             width: 190px;
             height: 170px;
         }
-        .headPic{
+
+        .headPic {
             background-image: url(../image/no_login.jpg);
             width: 60px;
             height: 60px;
@@ -167,7 +430,8 @@ html{width:100%;overflow-x:hidden;}
             -webkit-box-shadow: 3px 4px 20px #9999;
             box-shadow: 3px 4px 20px #9999;
         }
-        .head input{
+
+        .head .btn {
             float: left;
             border-radius: 25px;
             padding: 3px 7px;
@@ -178,77 +442,107 @@ html{width:100%;overflow-x:hidden;}
             top: 10px;
             left: 10px;
             margin: 0 5px;
+            font-size: 12px;
         }
-        .head input:nth-of-type(1){
+
+
+        .head .btn:nth-of-type(2) {
             background-color: white;
             color: red;
-            
+
         }
-        .head input:nth-of-type(2){
+
+        .head .btn:nth-of-type(3) {
             background-color: black;
             color: #d0c385;
-            
+
         }
-        .head span{
-            font-size:12px;
-            -webkit-transform: translate(50%,50%);
-            transform: translate(50%,50%);
-            
+
+        .head .btn:hover {
+            background-color: #e01222;
+            color: white;
         }
-        .head a{
-            font-size:13px;
+
+        .head span {
+            font-size: 12px;
+            -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+
+        }
+
+        .head a {
+            font-size: 13px;
             text-decoration: none;
             color: #999999;
             position: relative;
             left: 35%;
             top: 5px;
-            
+
         }
+
         .board {
             width: 190px;
             height: 130px;
             overflow: hidden;
         }
-        .board a{
+
+        .board a {
             float: left;
             text-decoration: none;
             color: black;
-            margin:0 10px;
-          
+            margin: 0 10px;
+            width: 35px;
+            height: 22px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
         }
-        .board a:hover{
+
+        .board a:hover {
             color: black;
+            border-bottom: 2px solid red;
         }
-        .board a:last-of-type{
+
+        .board a:last-of-type:hover {
+
+            border-bottom: none;
+        }
+
+        .board a:last-of-type {
             float: right;
-   
+
         }
-        .board span.space{
+
+        .board span.space {
             background-color: #999999;
             width: 1px;
             height: 17px;
             position: relative;
             top: 4px;
         }
-        
+
         .board li {
             list-style: none;
         }
-        .board ul{
+
+        .board ul {
             clear: both;
             position: relative;
-            top:10px;
+            top: 10px;
             left: 25px;
+            display: block;
         }
+
         .board ul:first-of-type {
             display: none;
         }
-        .right_aside span.space_hr{
+
+        .right_aside span.space_hr {
             background-color: #ebeaea;
             width: 160px;
             height: 2px;
             margin-left: 15px;
         }
+
         .picNav {
             width: 190px;
             height: 170px;
@@ -262,11 +556,13 @@ html{width:100%;overflow-x:hidden;}
             color: #9999;
             position: relative;
             left: 15px;
-             }
-        .picNav li:last-of-type{
+        }
+
+        .picNav li:last-of-type {
             position: relative;
             left: 20px;
         }
+
         .picNav a {
             text-decoration: none;
             color: #9999;
@@ -274,25 +570,25 @@ html{width:100%;overflow-x:hidden;}
             left: -17px;
             top: 17px;
             font-size: 12px;
-  
-            
-            
+
+
+
         }
 
         .top_search {
             width: 1000px;
             height: 170px;
-           
+
             float: left;
             position: relative;
-            top:30px;
+            top: 30px;
             left: 120px;
         }
 
         .search {
             width: 600px;
             height: 70px;
-        
+
             float: left;
         }
 
@@ -302,6 +598,7 @@ html{width:100%;overflow-x:hidden;}
             border: none;
             float: left;
         }
+
         .search_icon {
             width: 40px;
             height: 40px;
@@ -311,28 +608,29 @@ html{width:100%;overflow-x:hidden;}
             background-image: url(../image/search_icon.png);
             background-size: 80%;
             background-position: 5px 4px;
-          position: relative;
-            left: -40px; 
+            position: relative;
+            left: -40px;
         }
+
         .camera_icon {
             width: 40px;
             height: 40px;
             border: none;
-           
+
             float: left;
             background-image: url(../image/sprite-photo-search.png);
             background-size: 470%;
-            background-position:4px 6px;
+            background-position: 4px 6px;
             position: relative;
             left: -45px;
-            
+
         }
 
-        .under_search_nav a{
+        .under_search_nav a {
             text-decoration: none;
             color: #9999;
             font-size: 13px;
-            
+
 
         }
 
@@ -345,9 +643,10 @@ html{width:100%;overflow-x:hidden;}
             left: -75px;
             text-align: center;
             vertical-align: middle;
-            
+
         }
-        .shop_cart_icon{
+
+        .shop_cart_icon {
             background-image: url(../image/toolbars.png);
             width: 20px;
             height: 20px;
@@ -355,27 +654,29 @@ html{width:100%;overflow-x:hidden;}
             top: 10px;
             left: 60px;
             float: left;
-            
+
         }
-        .shop_cart span{
+
+        .shop_cart span {
             color: red;
-             position: relative;
+            position: relative;
             left: 60px;
             top: 10px;
             margin: 0 5px;
             font-size: 13px;
-           
+
         }
-        .shop_count{
+
+        .shop_count {
             width: 13px;
             height: 13px;
-            border-radius:40px;
+            border-radius: 40px;
             background-color: red;
             float: left;
             position: relative;
             top: 5px;
             left: 55px;
-             font-size: 13px;
+            font-size: 13px;
             text-align: center;
             vertical-align: middle;
             line-height: 14px;
@@ -383,7 +684,7 @@ html{width:100%;overflow-x:hidden;}
         }
 
         .erwei {
-            float:right;
+            float: right;
             width: 67px;
             height: 67px;
             border: 1px solid #9999;
@@ -405,20 +706,21 @@ html{width:100%;overflow-x:hidden;}
         .center_nav {
             width: 700px;
             height: 30px;
-            
+
             float: left;
             position: relative;
-            top:10px;
-            left:-100px;
-            
+            top: 10px;
+            left: -100px;
+
         }
-        .center_nav a{
+
+        .center_nav a {
             text-decoration: none;
             color: black;
             font-size: 16px;
         }
 
-        .right_aside{
+        .right_aside {
             position: relative;
             top: 170px;
         }
